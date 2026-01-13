@@ -1,10 +1,197 @@
-.seal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 300px;
-    height: 300px;
-    opacity: 0.05;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TKLAS Global Limited</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #0a2540;
+      line-height: 1.6;
+    }
+
+    /* Seal watermark */
+    .seal {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 300px;
+      height: 300px;
+      opacity: 0.05;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+
+    /* Header */
+    header {
+      padding: 40px 20px;
+      text-align: center;
+      background: linear-gradient(to right, #f4f7fb, #e8eff7);
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+    header img.logo {
+      width: 120px;
+      height: auto;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 42px;
+    }
+    header p {
+      margin-top: 5px;
+      font-size: 18px;
+      color: #555;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 25px;
+      text-align: center;
+      color: #0a2540;
+      font-size: 32px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      border: 1px solid #e5eaf0;
+      border-radius: 15px;
+      padding: 25px 20px;
+      background: #fff;
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: center;
+      color: #0a2540;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    }
+
+    /* Contact Form */
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background-color: #0a2540;
+      color: #fff;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #1f3f70;
+    }
+
+    footer {
+      background: #0a2540;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    footer p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Seal Watermark -->
+<img src="tklas_seal.png" class="seal" alt="Company Seal" />
+
+<!-- Header with Logo -->
+<header>
+  <img src="A_vector-style_digital_illustration_features_the_l.png" class="logo" alt="TKLAS Logo">
+  <h1>TKLAS Global Limited</h1>
+  <p>Professional Solutions | Trusted Global Services</p>
+</header>
+
+<!-- About Us Section -->
+<section>
+  <h2>About Us</h2>
+  <p>
+    <strong>TKLAS Global Limited</strong> is a registered limited liability company dedicated to helping businesses and individuals achieve their aspirational goals.
+    We provide professional and reliable solutions that empower our clients to access funding, grow their ventures, and realize their dreams.
+    Our commitment to integrity, excellence, and customer satisfaction ensures that every client receives tailored support and guidance to succeed in today’s dynamic global environment.
+  </p>
+</section>
+
+<!-- Services Section -->
+<section>
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Consulting & Advisory Services</h3>
+      <p>We provide expert guidance to help businesses make informed decisions and achieve sustainable growth.</p>
+    </div>
+    <div class="card">
+      <h3>Business Support Solutions</h3>
+      <p>From operations to strategy, we offer tailored support to help your business run efficiently and succeed.</p>
+    </div>
+    <div class="card">
+      <h3>International Opportunities & Documentation Support</h3>
+      <p>We assist clients in accessing travel opportunities and documentation support.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form -->
+<section>
+  <h2>Contact Us</h2>
+  <form action="mailto:info@tklasglobal.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <p style="text-align:center; margin-top:10px;">Or call us: 07078671899</p>
+</section>
+
+<footer>
+  <p><strong>TKLAS Global Limited</strong></p>
+  <p>© 2026 All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
